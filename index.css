@@ -1,75 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=IM+Fell+English:ital@0;1&display=swap');
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     border: 0;
     list-style: none;
     box-sizing: border-box;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'IM Fell English', serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(wheat,yellowgreen);
-    height: 100vh;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle, #e2dac7 0%, #c1b89e 100%);
+    padding: 24px 0;
 }
 
-.container{
-    background-color: green;
-    border-radius: 26px;
-    width: 400px;
+.container {
+    background-color: #162f22;
+    background-image: linear-gradient(180deg, #1d3c2c 0%, #11251a 100%);
+    border-radius: 16px; /* Cantos um pouco mais retos, clássicos */
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #384d3b;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.5);
+    padding-bottom: 8px;
 }
 
-.imagem{
+.imagem {
     display: flex;
     justify-content: center;
-    padding: 16px 0px;
+    padding: 28px 0 16px 0;
 }
 
-img{
+img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin: 0 auto;
+    object-fit: cover;
+    border: 3px solid #8c7853;
+    box-shadow: 0 0 0 4px #11251a, 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
-h1{
+h1 {
+    font-family: 'Cinzel', serif;
     text-align: center;
+    font-size: 1.4rem;
+    color: #cbb893;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-h6{
+h6 {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
     text-align: center;
+    font-size: 0.95rem;
+    color: #8fa896;
+    font-weight: 400;
+    margin-top: 4px;
 }
 
-ul{
+ul {
     display: flex;
     justify-content: center;
-    gap: 16px;
-    margin-top: 30px;
+    gap: 18px;
+    margin-top: 20px;
 }
 
-ul a:hover{
-    fill: purple;
-    transition-duration: 200ms;
+ul a {
+    transition: transform 200ms ease, opacity 200ms ease;
+    display: inline-block;
 }
 
-.butons{
+ul a svg, ul a {
+    fill: #9a8866;
+    color: #9a8866;
+}
+
+ul a:hover {
+    fill: #d3c4a5;
+    color: #d3c4a5;
+    transform: translateY(-2px);
+}
+
+.butons {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding: 16px;
+    gap: 14px;
+    padding: 24px 20px;
 }
 
-.butons a{
-    background-color: black;
-    color: wheat;
+.butons a {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #2a312d 0%, #1a1e1b 100%);
+    color: #d8cdb4;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 8px;
     text-decoration: none;
+    padding: 14px 16px;
+    font-weight: 700;
+    border: 1px solid #544835;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: all 200ms ease;
 }
-.butons a:hover{
-    background-color: purple;
-    transition-duration: 200ms;
+
+.butons a:hover {
+    background: linear-gradient(180deg, #37413b 0%, #222824 100%);
+    color: #f0e6d2;
+    border-color: #8c7853;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 10px rgba(140, 120, 83, 0.3);
+}
+
+.butons a:active {
+    transform: scale(0.98);
 }
