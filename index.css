@@ -120,3 +120,67 @@ ul a:hover {
 .butons a:active {
     transform: scale(0.98);
 }
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 16px;
+    }
+
+    .container {
+        width: 85%;
+        max-width: 380px;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 0.85rem;
+    }
+
+    .butons {
+        gap: 12px;
+        padding: 18px 16px;
+    }
+}
+
+/* Mobile*/
+@media screen and (max-width: 400px) {
+    .container {
+        width: 95%;
+        padding-bottom: 12px;
+    }
+
+    .imagem {
+        padding: 20px 0 12px 0;
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+    }
+
+    h1 {
+        font-size: 1.15rem;
+    }
+
+    h6 {
+        font-size: 0.8rem;
+    }
+
+    ul {
+        gap: 12px;
+        margin-top: 14px;
+    }
+
+    .butons {
+        gap: 10px;
+        padding: 16px 12px;
+    }
+
+    .butons a {
+        font-size: 0.75rem;
+        padding: 12px 10px;
+    }
+}
